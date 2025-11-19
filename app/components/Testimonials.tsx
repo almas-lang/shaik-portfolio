@@ -6,19 +6,19 @@ export default function Testimonials() {
     {
       name: 'Divya Srinivas',
       title: 'From Architect to a UX Designer',
-      image: '/images/divya.jpg',
+      image: '/images/divya.svg',
       linkedin: 'https://www.linkedin.com/in/divya-srinivas-designs/',
     },
     {
       name: 'Kritika Singh',
       title: 'Onto Design Leadership',
-      image: '/images/kritika.jpg',
+      image: '/images/kritika.svg',
       linkedin: 'https://www.linkedin.com/in/kritikasinghchauhan/',
     },
     {
       name: 'Rishik Jha',
       title: '0:1 AI Powered Mentor',
-      image: '/images/rishik.jpg',
+      image: '/images/rishik.svg',
       linkedin: 'https://www.linkedin.com/in/rishik-jha/',
     },
   ];

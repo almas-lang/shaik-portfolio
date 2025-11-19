@@ -10,7 +10,7 @@ export default function RevaCaseStudy() {
   const [currentSlide3, setCurrentSlide3] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f5f5f5] to-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#fcfcfc] to-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
         <div className="container mx-auto px-6 py-4">
