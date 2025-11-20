@@ -55,7 +55,7 @@ export default function TulipCaseStudy() {
                   using innovative storytelling and pricing models
                 </span>
               </h1>
-              <p className="text-base md:text-lg text-gray-900">
+              <p className="text-lg text-gray-900">
                 In tulips, a B2C social crowdfunding platform
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function TulipCaseStudy() {
           <div className="mb-12">
             <div className="relative rounded-xl p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
               <div className="bg-white rounded-xl p-4 md:p-6">
-                <p className="text-sm md:text-base text-gray-700 text-center">
+                <p className="text-lg text-gray-700 text-center">
                   <span className="font-semibold">Disclaimer:</span> I've kept
                   the organisation name redacted as "Tulip". I genuinely don't
                   want people messing with an ecosystem that's running thousands
@@ -83,7 +83,7 @@ export default function TulipCaseStudy() {
                 What is Tulip?
               </h2>
 
-              <p className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Tulip is an online crowdfunding platform where people in crisis
                 can ask for help and donors from across the world show up for
                 them. It runs fundraisers across medical emergencies, education,
@@ -97,7 +97,7 @@ export default function TulipCaseStudy() {
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                     From Tulips own data
                   </h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-800">
+                  <ul className="space-y-3 text-lg text-gray-800">
                     <li className="flex items-start gap-3">
                       <span className="text-[#F803FE] font-bold mt-1">•</span>
                       <span>
@@ -145,13 +145,13 @@ export default function TulipCaseStudy() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
             {/* Left Column */}
             <div className="space-y-2">
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Donation is such a strange behaviour if you think about it. You
                 give away your money and expect nothing in return. No product.
                 No service. Just faith.
               </p>
 
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 In India, this behaviour is tied deeply to culture - Dana,
                 Zakat, charity, religious duty, morality, empathy, family
                 values. All of it mixes together and forms this unique
@@ -174,7 +174,7 @@ export default function TulipCaseStudy() {
                 {/* </div> */}
                 {/* </div> */}
               </div>
-              <p className="text-base md:text-lg leading-relaxed pt-2">
+              <p className="text-lg leading-relaxed pt-2">
                 Tulip is one of the only organisations that managed to get this
                 right at scale in urban India. More than 96% of campaigns and
                 donations came from Tier-1 and urban markets.
@@ -190,7 +190,7 @@ export default function TulipCaseStudy() {
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div>
-                <p className="text-base md:text-lg text-gray-700 mb-4">
+                <p className="text-lg text-gray-700 mb-4">
                   Expand into Tier 2, 3, and rural Karnataka, and eventually
                   across India.
                 </p>
@@ -199,7 +199,7 @@ export default function TulipCaseStudy() {
                 </p>
               </div>
               <div>
-                <ul className="space-y-2 text-base md:text-lg text-gray-800">
+                <ul className="space-y-2 text-lg text-gray-800">
                   <li className="flex items-start gap-3">
                     <span className="text-[#a855f7] font-bold mt-1">•</span>
                     <span>
@@ -232,7 +232,7 @@ export default function TulipCaseStudy() {
             Now State (When we began)
           </h2>
 
-          <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
             The existing workflow presented (in the form of UML) below worked
             beautifully for urban areas
           </p>
@@ -246,7 +246,7 @@ export default function TulipCaseStudy() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Fundraiser user flow
                   </h3>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed">
                     Register → setup profile → add beneficiary details → add
                     case information → upload documents → choose promotion
                     options → set withdrawal options
@@ -260,7 +260,7 @@ export default function TulipCaseStudy() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Donor user flow
                   </h3>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed">
                     Find campaign → donate → get receipt
                   </p>
                 </div>
@@ -279,7 +279,7 @@ export default function TulipCaseStudy() {
                 />
                 <button
                   onClick={() => setShowUMLModal(true)}
-                  className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg"
+                  className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg"
                 >
                   See full UML view →
                 </button>
@@ -289,13 +289,13 @@ export default function TulipCaseStudy() {
 
           {/* Revenue Stats */}
           <div className="mb-8">
-            <p className="text-base md:text-lg text-gray-700 mb-2">
+            <p className="text-lg text-gray-700 mb-2">
               This engine produced
             </p>
             <h3 className="text-3xl md:text-4xl lg:text-2xl font-bold mb-4 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
               92% of Tulip's entire revenue
             </h3>
-            <p className="text-base md:text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-8">
               The remaining 8% came from offline fundraising teams operating in
               big cities.
             </p>
@@ -303,7 +303,7 @@ export default function TulipCaseStudy() {
 
           {/* Question Box */}
           <div className="mb-8">
-            <p className="text-base md:text-lg text-gray-700 mb-2">
+            <p className="text-lg text-gray-700 mb-2">
               The question was simple but bold:
             </p>
             <p className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
@@ -325,7 +325,7 @@ export default function TulipCaseStudy() {
                 className="w-12 h-12 md:w-16 md:h-16"
               />
             </div>
-            <p className="text-base md:text-lg text-gray-800 leading-relaxed py-4">
+            <p className="text-lg text-gray-800 leading-relaxed py-4">
               We needed to understand the gaps, the motivations, the cultural
               layer, and what variations were mandatory.
             </p>
@@ -349,7 +349,7 @@ export default function TulipCaseStudy() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-6">
               {/* Study Location */}
               <div>
-                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
                   Karnataka tier 2, 3, and rural
                 </h4>
                 <p className="text-sm text-gray-600">Study location</p>
@@ -357,7 +357,7 @@ export default function TulipCaseStudy() {
 
               {/* Team */}
               <div>
-                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
                   13 core team members & off-shore supporters
                 </h4>
                 <p className="text-sm text-gray-600">Team</p>
@@ -365,7 +365,7 @@ export default function TulipCaseStudy() {
 
               {/* Data */}
               <div>
-                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
                   Mixed (Qualitative & Quantitative)
                 </h4>
                 <p className="text-sm text-gray-600">Data</p>
@@ -375,7 +375,7 @@ export default function TulipCaseStudy() {
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               {/* Analysis */}
               <div>
-                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
                   Statistical & Thematic
                 </h4>
                 <p className="text-sm text-gray-600">Analysis</p>
@@ -383,7 +383,7 @@ export default function TulipCaseStudy() {
 
               {/* Duration */}
               <div>
-                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
                   40 days
                 </h4>
                 <p className="text-sm text-gray-600">Duration</p>
@@ -400,7 +400,7 @@ export default function TulipCaseStudy() {
             <div className="grid lg:grid-cols-2 gap-6">
               {/* Main Hypothesis */}
               <div>
-                <p className="text-base md:text-lg text-gray-900 font-semibold mb-4">
+                <p className="text-lg text-gray-900 font-semibold mb-4">
                   "Donation behaviour in urban areas of Karnataka is more
                   significant than rural areas"
                 </p>
@@ -753,20 +753,20 @@ export default function TulipCaseStudy() {
                     {/* Three Objectives in Columns */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                       <div>
-                        <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                        <p className="text-lg text-gray-800 leading-relaxed">
                           Understand why people donate - motivations,
                           frustrations, emotional triggers. Compare differences
                           between urban and rural donors.
                         </p>
                       </div>
                       <div>
-                        <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                        <p className="text-lg text-gray-800 leading-relaxed">
                            Understand how social, cultural, demographic, and
                           economic factors affect donation behaviour.Build hypotheses and segment markets.
                         </p>
                       </div>
                       <div>
-                        <h5 className="ttext-sm md:text-base text-gray-800 leading-relaxed">
+                        <h5 className="ttext-lg text-gray-800 leading-relaxed">
                           Build a geographical + behavioural segmentation
                           strategy, TAM sizing, GTM outline, and service
                           touchpoints adapted for Karnataka's tier 2/3/rural
@@ -789,7 +789,7 @@ export default function TulipCaseStudy() {
                         <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                           430+ quant participants
                         </h5>
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                        <p className="text-lg text-gray-600 leading-relaxed">
                           Random sampling, statistically significant, 90%
                           confidence level, error margin of 0.1
                         </p>
@@ -800,7 +800,7 @@ export default function TulipCaseStudy() {
                         <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                           14 qual participants
                         </h5>
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                        <p className="text-lg text-gray-600 leading-relaxed">
                           2 user ship reps: Married-Salaried-RegDonor &
                           Unmarried-Income-OfflineDonor
                         </p>
@@ -811,7 +811,7 @@ export default function TulipCaseStudy() {
                         <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                           Data collection location
                         </h5>
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                        <p className="text-lg text-gray-600 leading-relaxed">
                           Roads, Bus stops, Partnered hospitals, Offshore team
                           neighbourhood families
                         </p>
@@ -831,7 +831,7 @@ export default function TulipCaseStudy() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
                           <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed">
                               <span className="font-bold">●</span> Demography:
                               Residing location, residing duration, age, gender,
                               highest education background, marital status,
@@ -842,7 +842,7 @@ export default function TulipCaseStudy() {
 
                         <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
                           <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed">
                               <span className="font-bold">●</span> Donation
                               behaviour: Donation frequency, donation amount,
                               repeated causes, motivations, frustrations
@@ -855,7 +855,7 @@ export default function TulipCaseStudy() {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
                           <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed">
                               <span className="font-bold">●</span> Economic:
                               Annual income, employment status
                             </p>
@@ -864,7 +864,7 @@ export default function TulipCaseStudy() {
 
                         <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
                           <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed">
                               <span className="font-bold">●</span> Government
                               policies: Tax incentive awareness
                             </p>
@@ -873,7 +873,7 @@ export default function TulipCaseStudy() {
 
                         <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
                           <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed">
                               <span className="font-bold">●</span> Social and
                               cultural backgrounds
                             </p>
@@ -977,7 +977,7 @@ export default function TulipCaseStudy() {
                           <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
                             Codes & Themes
                           </h5>
-                          <ul className="space-y-3 text-sm md:text-base text-gray-800">
+                          <ul className="space-y-3 text-lg text-gray-800">
                             <li className="flex items-start gap-2">
                               <span className="font-bold mt-1">•</span>
                               <span>Trust and transparency</span>
@@ -1082,19 +1082,19 @@ export default function TulipCaseStudy() {
             What These Insights Triggered Internally...
           </h2>
 
-          <p className="text-base md:text-lg italic text-gray-700 mb-8">
+          <p className="text-lg italic text-gray-700 mb-8">
             This is the part I love the most - the empathy shift...
           </p>
 
           {/* Empathy Shift Box */}
           <div className="relative rounded-[20px] p-[2px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] mb-12">
             <div className="bg-white rounded-[18px] p-6 md:p-8 grid md:grid-cols-2 gap-6 items-center">
-              <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 The entire product, design, and CX team started speaking from
                 the user's perspective. We even started referring to personas
                 with names like "Arun," the statistical persona representative.
               </p>
-              <p className="text-base md:text-lg font-bold text-gray-900 text-center md:text-right">
+              <p className="text-lg font-bold text-gray-900 text-center md:text-right">
                 A new user journey began to emerge
               </p>
             </div>
@@ -1551,7 +1551,7 @@ export default function TulipCaseStudy() {
 
             <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               <div>
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   <span className="font-bold">1.</span> Total number of
                   fundraisers increased by 21%. And rural areas contributed upto
                   19% of these
@@ -1559,18 +1559,18 @@ export default function TulipCaseStudy() {
               </div>
 
               <div>
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   <span className="font-bold">2.</span> Reduced drop-offs:
                   Drop-off rate came down to &lt;30%
                 </p>
               </div>
 
               <div className="space-y-4">
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   <span className="font-bold">3.</span> Combine with tipping
                   model, revenue jumped by 35%.
                 </p>
-                <p className="text-sm md:text-base leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   This happened: Tulip stopped charging fundraisers → With
                   better stories → more trust → more donations → more tips
                 </p>
@@ -1657,14 +1657,14 @@ export default function TulipCaseStudy() {
                   </div>
                 </div>
 
-                <p className="text-white text-base md:text-lg leading-relaxed mb-auto max-w-[400px]">
+                <p className="text-white text-lg leading-relaxed mb-auto max-w-[400px]">
                   Reduced customer onboarding time to just 10.2 days (earlier 180
                   days) without increasing CAC.
                 </p>
 
                 <div className="flex items-center justify-end mt-6">
                   <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
-                    <span className="text-base md:text-lg">View case study</span>
+                    <span className="text-lg">View case study</span>
                     <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
                       <svg
                         className="w-6 h-6"
@@ -1689,14 +1689,14 @@ export default function TulipCaseStudy() {
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
                   Want to discuss this case study?
                 </h2>
-                <p className="text-base md:text-lg mb-6 md:mb-8 text-white/90">
+                <p className="text-lg mb-6 md:mb-8 text-white/90">
                   Let's talk about how strategic design can transform your business
                   metrics.
                 </p>
                 <div>
                   <Link
                     href="/#contact"
-                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
+                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg font-semibold hover:bg-[#d12835] transition-colors"
                   >
                     Get in touch
                     <svg
