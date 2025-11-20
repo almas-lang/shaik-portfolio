@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   keywords: ["UX Designer", "Growth Strategist", "Product Designer", "Business Growth", "Design Leadership", "User Experience", "Shaik Murad"],
   authors: [{ name: "Shaik Murad" }],
   icons: {
-    icon: "/images/favicon.png",
-    shortcut: "/images/favicon.png",
-    apple: "/images/favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "Shaik Murad - UX Designer & Growth Strategist",
