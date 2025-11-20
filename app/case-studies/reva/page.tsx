@@ -85,7 +85,7 @@ export default function RevaCaseStudy() {
                   </span>
                 </h3>
 
-                <p className="text-gray-700 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                   Reva Security, a B2B data protection platform built on
                   AES-256-bit encryption, had a 180-day sales-led acquisition
                   cycle involving 6 internal teams and 17 customer touchpoints.
@@ -95,7 +95,7 @@ export default function RevaCaseStudy() {
                   <h4 className="text-base font-bold text-gray-900 mb-4">
                     CONSTRAINTS
                   </h4>
-                  <ul className="space-y-3 text-gray-700 text-sm">
+                  <ul className="space-y-3 text-gray-700 text-lg">
                     <li className="flex gap-2">
                       <span>•</span>
                       <span>
@@ -123,7 +123,7 @@ export default function RevaCaseStudy() {
                   <h4 className="text-base font-bold text-gray-900 mb-4">
                     DECISION LOGS
                   </h4>
-                  <ul className="space-y-3 text-gray-700 text-sm">
+                  <ul className="space-y-3 text-gray-700 text-lg">
                     <li className="flex gap-2">
                       <span>•</span>
                       <span>
@@ -155,7 +155,7 @@ export default function RevaCaseStudy() {
                 {/* BETS Box */}
                 <div className="bg-[#2d2d3f] text-white p-6 md:p-8 rounded-xl">
                   <h4 className="text-lg font-bold mb-4">BETS</h4>
-                  <ul className="space-y-3 text-sm">
+                  <ul className="space-y-3 text-lg">
                     <li className="flex gap-2">
                       <span>•</span>
                       <span>
@@ -441,7 +441,7 @@ export default function RevaCaseStudy() {
                                 />
                               </div>
                               <div>
-                                <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">
+                                <h4 className="text-lg font-bold text-gray-900 mb-2">
                                   Direct Administrator
                                 </h4>
                                 <p className="text-xs text-gray-600 leading-relaxed">
@@ -564,7 +564,7 @@ export default function RevaCaseStudy() {
                           <h4 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             38%
                           </h4>
-                          <p className="text-gray-700 text-base leading-relaxed">
+                          <p className="text-gray-700 text-lg leading-relaxed">
                             Inbound demo requests came from HR/Compliance Heads
                           </p>
                         </div>
@@ -574,7 +574,7 @@ export default function RevaCaseStudy() {
                           <h4 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             72%
                           </h4>
-                          <p className="text-gray-700 text-base leading-relaxed">
+                          <p className="text-gray-700 text-lg leading-relaxed">
                             Users dropped off before completing a full demo
                           </p>
                         </div>
@@ -584,7 +584,7 @@ export default function RevaCaseStudy() {
                           <h4 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             $430
                           </h4>
-                          <p className="text-gray-700 text-base leading-relaxed">
+                          <p className="text-gray-700 text-lg leading-relaxed">
                             Customer acquisition cost (CAC) per lead in per
                             sales effort
                           </p>
@@ -595,7 +595,7 @@ export default function RevaCaseStudy() {
                           <h4 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             64%
                           </h4>
-                          <p className="text-gray-700 text-base leading-relaxed">
+                          <p className="text-gray-700 text-lg leading-relaxed">
                             Confused "always-on encryption" with antivirus/
                             firewall solutions.
                           </p>
@@ -622,7 +622,7 @@ export default function RevaCaseStudy() {
                     <h3 className="text-2xl md:text-3xl font-bold text-[#5b7cff] mb-4">
                       Journey map
                     </h3>
-                    <p className="text-gray-700 text-base mb-6">
+                    <p className="text-gray-700 text-lg mb-6">
                       Perceive &gt; Consider &gt; Instigate (Pre & Post) &gt;
                       Learn &gt; Onboard &gt; Regularise &gt; Conclude
                     </p>
@@ -922,7 +922,7 @@ export default function RevaCaseStudy() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12 items-center">
             {/* Left side - Bullet points */}
             <div>
-              <ul className="space-y-3 md:space-y-4 text-gray-700 text-base md:text-lg">
+              <ul className="space-y-3 md:space-y-4 text-gray-700 text-lg">
                 <li className="flex gap-2 md:gap-3">
                   <span className="flex-shrink-0">•</span>
                   <span>Sign-up → 2 min</span>
@@ -969,29 +969,29 @@ export default function RevaCaseStudy() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
             <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-              <h4 className="text-base md:text-lg font-bold text-gray-800 mb-2 md:mb-3">
+              <h4 className="text-lg font-bold text-gray-800 mb-2 md:mb-3">
                 8th-grade English
               </h4>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 All microcopy rewritten for comprehension (Flesch Reading Ease
                 &gt; 70).
               </p>
             </div>
 
             <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-              <h4 className="text-base md:text-lg font-bold text-gray-800 mb-2 md:mb-3">
+              <h4 className="text-lg font-bold text-gray-800 mb-2 md:mb-3">
                 Guided tours
               </h4>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Interactive hotspots instead of video tutorials
               </p>
             </div>
 
             <div className="bg-blue-50 p-4 md:p-6 rounded-xl sm:col-span-2 md:col-span-1">
-              <h4 className="text-base md:text-lg font-bold text-gray-800 mb-2 md:mb-3">
+              <h4 className="text-lg font-bold text-gray-800 mb-2 md:mb-3">
                 Trust cues
               </h4>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Visual "encryption in progress / complete" states to make
                 security tangible.
               </p>
@@ -1037,7 +1037,7 @@ export default function RevaCaseStudy() {
 
           <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
             <div>
-              <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-4 md:mb-6 leading-relaxed">
                 We ran three rapid usability loops with 24 participants (mix of
                 HR, IT, and legal users).
               </p>
@@ -1065,7 +1065,7 @@ export default function RevaCaseStudy() {
           <div className="text-center pt-6 md:pt-10">
             <Link
               href="#"
-              className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-semibold hover:bg-[#d12835] transition-colors"
+              className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg font-semibold hover:bg-[#d12835] transition-colors"
             >
               Access lo-fi interactive designs →
             </Link>
@@ -1187,7 +1187,7 @@ export default function RevaCaseStudy() {
           <div className="text-center">
             <Link
               href="#"
-              className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-semibold hover:bg-[#d12835] transition-colors"
+              className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg font-semibold hover:bg-[#d12835] transition-colors"
             >
               Access structural designs →
             </Link>
@@ -1204,7 +1204,7 @@ export default function RevaCaseStudy() {
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
             <div>
-              <p className="text-base md:text-lg italic mb-6 md:mb-8">
+              <p className="text-lg italic mb-6 md:mb-8">
                 6 months after rollout, we had numbers worth celebrating - and
                 defending
               </p>
@@ -1242,11 +1242,11 @@ export default function RevaCaseStudy() {
           </div>
 
           <div className="mt-8 md:mt-12 space-y-3 md:space-y-4">
-            <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               • And the sales team finally had time to chase enterprise deals
               instead of hand-holding SMEs.
             </p>
-            <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               • Internally, this became a case study in how UX + product +
               business alignment can shift company economics. Externally, it
               positioned Reva as a scalable SaaS model - a factor that
@@ -1267,10 +1267,10 @@ export default function RevaCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {/* Box 1 - Focus beats scale */}
             <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
-              <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Focus beats scale in complex B2B.
               </h3>
-              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 When everyone sells "full-stack security," owning one clear
                 slice (HR data security) made us visible and defensible.
               </p>
@@ -1278,10 +1278,10 @@ export default function RevaCaseStudy() {
 
             {/* Box 2 - Language drives trust */}
             <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
-              <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Language drives trust:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 Simplifying encryption jargon into human terms improved
                 comprehension by +29 points and conversion by +3.4 %.
               </p>
@@ -1289,10 +1289,10 @@ export default function RevaCaseStudy() {
 
             {/* Box 3 - Evaluate fast */}
             <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
-              <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Evaluate fast, explore faster:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 We depended too long on evaluative metrics; our breakthrough
                 came when we mixed exploratory shadowing with lean validation.
               </p>
@@ -1300,10 +1300,10 @@ export default function RevaCaseStudy() {
 
             {/* Box 4 - Process over perfection */}
             <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
-              <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Process over perfection:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 Three design iterations in 60 days outperformed six months of
                 pixel-perfect screens.
               </p>
@@ -1311,14 +1311,14 @@ export default function RevaCaseStudy() {
 
             {/* Box 5 - Design as business catalyst */}
             <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl md:col-span-2">
-              <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Design as a business catalyst:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 mb-4 leading-relaxed">
+              <p className="text-lg text-gray-800 mb-4 leading-relaxed">
                 In engineering-heavy orgs, the designer's job isn't to beautify
                 - it's to quantify.
               </p>
-              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 "What if this screen saved 60 sales hours?" became our default
                 question.
               </p>
@@ -1334,13 +1334,13 @@ export default function RevaCaseStudy() {
             Closing reflection
           </h2>
 
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 md:mb-6">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4 md:mb-6">
             What started as an under-resourced experiment became a proof of
             concept that design could cut onboarding time by 88 % and bring
             customer acquisition cost to zero.
           </p>
 
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed">
             It changed how Reva saw design's role - from "make it look good" to
             "make it make money." And that mindset, I think, is what truly
             scaled - not just the product.
@@ -1373,14 +1373,14 @@ export default function RevaCaseStudy() {
                   </div>
                 </div>
 
-                <p className="text-white text-base md:text-lg leading-relaxed mb-auto">
+                <p className="text-white text-lg leading-relaxed mb-auto">
                   0→1 AI powered mentor OS - Acquired 122 students &amp; 6 trainers
                   in 1st 4 months (&amp; onto winning a $4.3T edu market)
                 </p>
 
                 <div className="flex items-center justify-end mt-6">
                   <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
-                    <span className="text-base md:text-lg">View case study</span>
+                    <span className="text-lg">View case study</span>
                     <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
                       <svg
                         className="w-6 h-6"
@@ -1405,14 +1405,14 @@ export default function RevaCaseStudy() {
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
                   Want to discuss this case study?
                 </h2>
-                <p className="text-base md:text-lg mb-6 md:mb-8 text-white/90">
+                <p className="text-lg mb-6 md:mb-8 text-white/90">
                   Let's talk about how strategic design can transform your business
                   metrics.
                 </p>
                 <div>
                   <Link
                     href="/#contact"
-                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
+                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-lg font-semibold hover:bg-[#d12835] transition-colors"
                   >
                     Get in touch
                     <svg

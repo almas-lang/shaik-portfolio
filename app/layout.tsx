@@ -20,11 +20,6 @@ export const metadata: Metadata = {
   description: "Enabling Businesses & Designers to scale by connecting strategy, deep general design, and practical execution abilities. 13 years of experience helping businesses grow.",
   keywords: ["UX Designer", "Growth Strategist", "Product Designer", "Business Growth", "Design Leadership", "User Experience", "Shaik Murad"],
   authors: [{ name: "Shaik Murad" }],
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
-  },
   openGraph: {
     title: "Shaik Murad - UX Designer & Growth Strategist",
     description: "Enabling Businesses & Designers to scale by connecting strategy, deep general design, and practical execution abilities.",
