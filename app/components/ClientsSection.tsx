@@ -1,17 +1,19 @@
+import Image from 'next/image';
+
 export default function ClientsSection() {
   const clients = [
-    { name: 'Yokogawa', description: 'Industrial Automation' },
-    { name: 'Lighthouse Canton', description: 'Wealth Management' },
-    { name: 'GetCopayHelp', description: 'Patient Financial Assistance' },
-    { name: 'To the New', description: 'Servicing Banking, Travel' },
-    { name: 'Credit Saison', description: 'NBFC, Loan & Credit Line' },
-    { name: 'Tata Sky', description: 'Entertainment' },
-    { name: 'Milaap', description: 'Social Crowdfunding' },
-    { name: 'Xperience Wave', description: 'Education, Health' },
-    { name: 'Motus', description: 'Banking, Vehicle reimbursement' },
-    { name: 'Fortra', description: 'Data Security' },
-    { name: 'KredX', description: 'Supply chain finance' },
-    { name: 'Westcon-Comstor', description: 'Servicing, IT distributor' },
+    { name: 'Yokogawa', description: 'Industrial Automation', logo: '/images/logos/yokogawa.jpeg' },
+    { name: 'Lighthouse Canton', description: 'Wealth Management', logo: '/images/logos/LC.png' },
+    { name: 'GetCopayHelp', description: 'Patient Financial Assistance', logo: '/images/logos/Getcopay.jpeg' },
+    { name: 'To the New', description: 'Servicing Banking, Travel', logo: '/images/logos/tothenew.jpeg' },
+    { name: 'Credit Saison', description: 'NBFC, Loan & Credit Line', logo: '/images/logos/creditsaison.png' },
+    { name: 'Tata Sky', description: 'Entertainment', logo: '/images/logos/Tata_Sky.webp' },
+    { name: 'Milaap', description: 'Social Crowdfunding', logo: '/images/logos/milaap.jpeg' },
+    { name: 'Xperience Wave', description: 'Education, Health', logo: '/images/logos/xw.png' },
+    { name: 'Motus', description: 'Banking, Vehicle reimbursement', logo: '/images/logos/motus.jpeg' },
+    { name: 'Fortra', description: 'Data Security', logo: '/images/logos/fortra.png' },
+    { name: 'KredX', description: 'Supply chain finance', logo: '/images/logos/kredx.jpeg' },
+    { name: 'Westcon-Comstor', description: 'Servicing, IT distributor', logo: '/images/logos/Westcon-Comstor.jpeg' },
   ];
 
   return (
@@ -26,12 +28,23 @@ export default function ClientsSection() {
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="bg-white p-5 md:p-6 rounded-lg border-b-4 border-transparent hover:border-[#5b3a8f] transition-all duration-300"
+                className="bg-white p-5 md:p-6 rounded-lg border-b-4 border-transparent hover:border-[#5b3a8f] transition-all duration-300 flex items-center justify-between gap-4"
               >
-                <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
-                  {client.name}
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">{client.description}</p>
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
+                    {client.name}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600">{client.description}</p>
+                </div>
+                <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 md:w-20 md:h-20">
+                  <Image
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             ))}
           </div>

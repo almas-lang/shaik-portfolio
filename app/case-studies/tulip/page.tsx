@@ -1634,6 +1634,92 @@ export default function TulipCaseStudy() {
         </div>
       </section>
 
+      {/* Footer CTA */}
+      <section className="py-12 md:py-16 lg:py-20 bg-[#2d2d3f]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              {/* Next Case Study Card */}
+              <Link
+                href="/case-studies/reva"
+                className="bg-[#242424] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col min-h-[320px] hover:shadow-2xl transition-shadow cursor-pointer"
+              >
+                <div className="mb-6 md:mb-8 relative">
+                  <div className="relative inline-flex items-center">
+                    <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-[#FFCB00] flex items-center justify-center">
+                      <span className="text-white font-bold text-[40px] md:text-[48px] tracking-tight reva-font">
+                        RE
+                      </span>
+                    </div>
+                    <h2 className="text-[40px] md:text-[48px] font-bold text-white absolute left-[58px] md:left-[70px] top-1/2 -translate-y-1/2 reva-font">
+                      VA
+                    </h2>
+                  </div>
+                </div>
+
+                <p className="text-white text-base md:text-lg leading-relaxed mb-auto max-w-[400px]">
+                  Reduced customer onboarding time to just 10.2 days (earlier 180
+                  days) without increasing CAC.
+                </p>
+
+                <div className="flex items-center justify-end mt-6">
+                  <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
+                    <span className="text-base md:text-lg">View case study</span>
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Contact CTA Card */}
+              <div className="bg-[#242424] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10 text-white flex flex-col justify-center min-h-[320px]">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+                  Want to discuss this case study?
+                </h2>
+                <p className="text-base md:text-lg mb-6 md:mb-8 text-white/90">
+                  Let's talk about how strategic design can transform your business
+                  metrics.
+                </p>
+                <div>
+                  <Link
+                    href="/#contact"
+                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
+                  >
+                    Get in touch
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* UML Modal */}
       {showUMLModal && (
         <div

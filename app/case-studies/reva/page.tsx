@@ -8,6 +8,7 @@ export default function RevaCaseStudy() {
   const [currentSlide1, setCurrentSlide1] = useState(0);
   const [currentSlide2, setCurrentSlide2] = useState(0);
   const [currentSlide3, setCurrentSlide3] = useState(0);
+  const [currentVdSlide, setCurrentVdSlide] = useState(0);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#fcfcfc] to-white">
@@ -183,25 +184,18 @@ export default function RevaCaseStudy() {
                 {/* Arrow connector */}
                 <div className="flex justify-center">
                   <svg
-                    width="2"
+                    width="24"
                     height="40"
-                    viewBox="0 0 2 40"
+                    viewBox="0 0 24 40"
                     fill="none"
-                    className="text-gray-400"
+                    className="text-black"
                   >
-                    <line
-                      x1="1"
-                      y1="0"
-                      x2="1"
-                      y2="30"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeDasharray="4 4"
-                    />
                     <path
-                      d="M1 40 L1 35 M1 40 L4 37 M1 40 L-2 37"
+                      d="M12 0 L12 35 M12 40 L12 35 M12 40 L7 35 M12 40 L17 35"
                       stroke="currentColor"
                       strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -281,7 +275,7 @@ export default function RevaCaseStudy() {
                   alt="Success"
                   width={60}
                   height={60}
-                  className="w-auto h-auto"
+                  className="w-[80px] h-auto"
                 />
               </div>
               <div>
@@ -351,7 +345,7 @@ export default function RevaCaseStudy() {
                   alt="Success"
                   width={60}
                   height={60}
-                  className="w-auto h-auto"
+                  className="w-[80px] h-auto invert"
                 />
               </div>
               <div>
@@ -1079,64 +1073,117 @@ export default function RevaCaseStudy() {
         </div>
       </section>
 
-      {/* High Fidelity Designs */}
+      {/* High Fidelity Designs - Carousel */}
       <section className="py-16 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-8">
-            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
-              <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
-                <span className="text-gray-400">
-                  <Image
-                    src="/images/REVA_Security/vd1.svg"
-                    alt="vd1"
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto object-cover"
-                  />
-                </span>
+          {/* Carousel Container */}
+          <div className="relative mb-6 md:mb-8">
+            {/* Carousel Slides */}
+            <div className="relative overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentVdSlide * 100}%)` }}
+              >
+                {/* Slide 1 - vd1.svg */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                    <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
+                      <Image
+                        src="/images/REVA_Security/vd1.svg"
+                        alt="Design visual 1"
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Slide 2 - vd2.svg */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                    <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
+                      <Image
+                        src="/images/REVA_Security/vd2.svg"
+                        alt="Design visual 2"
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Slide 3 - vd3.svg */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                    <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
+                      <Image
+                        src="/images/REVA_Security/vd3.svg"
+                        alt="Design visual 3"
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Slide 4 - vd4.svg */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                    <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
+                      <Image
+                        src="/images/REVA_Security/vd4.svg"
+                        alt="Design visual 4"
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              {/* Left Arrow */}
+              <button
+                onClick={() => setCurrentVdSlide(currentVdSlide > 0 ? currentVdSlide - 1 : 3)}
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 md:p-3 rounded-full shadow-lg transition-all z-10"
+                aria-label="Previous slide"
+              >
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Right Arrow */}
+              <button
+                onClick={() => setCurrentVdSlide(currentVdSlide < 3 ? currentVdSlide + 1 : 0)}
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 md:p-3 rounded-full shadow-lg transition-all z-10"
+                aria-label="Next slide"
+              >
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
-            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
-              <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
-                <span className="text-gray-400">
-                  <Image
-                    src="/images/REVA_Security/vd2.svg"
-                    alt="vd2"
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto object-cover"
-                  />
-                </span>
-              </div>
-            </div>
-            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
-              <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
-                <span className="text-gray-400">
-                  <Image
-                    src="/images/REVA_Security/vd3.svg"
-                    alt="vd3"
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto object-cover"
-                  />
-                </span>
-              </div>
-            </div>
-            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
-              <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
-                <span className="text-gray-400">
-                  <Image
-                    src="/images/REVA_Security/vd4.svg"
-                    alt="vd4"
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto object-cover"
-                  />
-                </span>
-              </div>
+
+            {/* Dots Navigation */}
+            <div className="flex items-center justify-center gap-2 mt-6">
+              {[0, 1, 2, 3].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentVdSlide(index)}
+                  className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all ${
+                    currentVdSlide === index ? "bg-gray-900 w-8" : "bg-gray-300"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
 
+          {/* Button */}
           <div className="text-center">
             <Link
               href="#"
@@ -1217,17 +1264,20 @@ export default function RevaCaseStudy() {
             Learnings
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0 border border-gray-300">
-            {/* Column 1 */}
-            <div className="bg-[#e8e4f3] p-4 md:p-6 lg:p-8 md:border-r border-b md:border-b-0 border-gray-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {/* Box 1 - Focus beats scale */}
+            <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
-                Focus beats scale in complex B2B.:
+                Focus beats scale in complex B2B.
               </h3>
-              <p className="text-sm md:text-base text-gray-800 mb-4 md:mb-6 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
                 When everyone sells "full-stack security," owning one clear
                 slice (HR data security) made us visible and defensible.
               </p>
+            </div>
 
+            {/* Box 2 - Language drives trust */}
+            <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Language drives trust:
               </h3>
@@ -1237,16 +1287,19 @@ export default function RevaCaseStudy() {
               </p>
             </div>
 
-            {/* Column 2 */}
-            <div className="bg-[#d8d4e8] p-4 md:p-6 lg:p-8 md:border-r border-b lg:border-b-0 border-gray-300">
+            {/* Box 3 - Evaluate fast */}
+            <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Evaluate fast, explore faster:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 mb-4 md:mb-6 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
                 We depended too long on evaluative metrics; our breakthrough
                 came when we mixed exploratory shadowing with lean validation.
               </p>
+            </div>
 
+            {/* Box 4 - Process over perfection */}
+            <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl">
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Process over perfection:
               </h3>
@@ -1256,16 +1309,15 @@ export default function RevaCaseStudy() {
               </p>
             </div>
 
-            {/* Column 3 */}
-            <div className="bg-[#c8c4d8] p-4 md:p-6 lg:p-8 md:col-span-2 lg:col-span-3">
+            {/* Box 5 - Design as business catalyst */}
+            <div className="bg-[#e8e4f3] p-6 md:p-8 rounded-xl md:col-span-2">
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">
                 Design as a business catalyst:
               </h3>
-              <p className="text-sm md:text-base text-gray-800 mb-4 md:mb-6 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-800 mb-4 leading-relaxed">
                 In engineering-heavy orgs, the designer's job isn't to beautify
                 - it's to quantify.
               </p>
-
               <p className="text-sm md:text-base text-gray-800 leading-relaxed">
                 "What if this screen saved 60 sales hours?" became our default
                 question.
@@ -1297,21 +1349,90 @@ export default function RevaCaseStudy() {
       </section>
 
       {/* Footer CTA */}
-      <section className="py-16 px-4 md:px-6 bg-[#2d2d3f] text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-            Want to discuss this case study?
-          </h2>
-          <p className="text-base md:text-lg mb-6 md:mb-8">
-            Let's talk about how strategic design can transform your business
-            metrics.
-          </p>
-          <Link
-            href="/#contact"
-            className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
-          >
-            Get in touch →
-          </Link>
+      <section className="py-12 md:py-16 lg:py-20 bg-[#2d2d3f]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              {/* Next Case Study Card */}
+              <Link
+                href="/case-studies/tulip"
+                className="bg-[#242424] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col min-h-[320px] hover:shadow-2xl transition-shadow cursor-pointer"
+              >
+                <div className="mb-6 md:mb-8">
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-white flex items-center justify-center p-2 md:p-3">
+                      <Image
+                        src="/images/skaeyl-logo.svg"
+                        alt="Skaeyl Logo"
+                        width={72}
+                        height={72}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-none font-heading">Skaeyl</h2>
+                  </div>
+                </div>
+
+                <p className="text-white text-base md:text-lg leading-relaxed mb-auto">
+                  0→1 AI powered mentor OS - Acquired 122 students &amp; 6 trainers
+                  in 1st 4 months (&amp; onto winning a $4.3T edu market)
+                </p>
+
+                <div className="flex items-center justify-end mt-6">
+                  <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
+                    <span className="text-base md:text-lg">View case study</span>
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Contact CTA Card */}
+              <div className="bg-[#242424] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10 text-white flex flex-col justify-center min-h-[320px]">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+                  Want to discuss this case study?
+                </h2>
+                <p className="text-base md:text-lg mb-6 md:mb-8 text-white/90">
+                  Let's talk about how strategic design can transform your business
+                  metrics.
+                </p>
+                <div>
+                  <Link
+                    href="/#contact"
+                    className="inline-flex items-center gap-2 bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
+                  >
+                    Get in touch
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
