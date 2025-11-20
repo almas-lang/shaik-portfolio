@@ -2,18 +2,18 @@ import Image from 'next/image';
 
 export default function ClientsSection() {
   const clients = [
-    { name: 'Yokogawa', description: 'Industrial Automation', logo: '/images/logos/yokogawa.jpeg' },
-    { name: 'Lighthouse Canton', description: 'Wealth Management', logo: '/images/logos/LC.png' },
-    { name: 'GetCopayHelp', description: 'Patient Financial Assistance', logo: '/images/logos/Getcopay.jpeg' },
-    { name: 'To the New', description: 'Servicing Banking, Travel', logo: '/images/logos/tothenew.jpeg' },
-    { name: 'Credit Saison', description: 'NBFC, Loan & Credit Line', logo: '/images/logos/creditsaison.png' },
-    { name: 'Tata Sky', description: 'Entertainment', logo: '/images/logos/Tata_Sky.webp' },
-    { name: 'Milaap', description: 'Social Crowdfunding', logo: '/images/logos/milaap.jpeg' },
-    { name: 'Xperience Wave', description: 'Education, Health', logo: '/images/logos/xw.png' },
-    { name: 'Motus', description: 'Banking, Vehicle reimbursement', logo: '/images/logos/motus.jpeg' },
-    { name: 'Fortra', description: 'Data Security', logo: '/images/logos/fortra.png' },
-    { name: 'KredX', description: 'Supply chain finance', logo: '/images/logos/kredx.jpeg' },
-    { name: 'Westcon-Comstor', description: 'Servicing, IT distributor', logo: '/images/logos/Westcon-Comstor.jpeg' },
+    { name: 'Yokogawa', description: 'Industrial Automation', logo: '/images/Logos/yokogawa.jpeg' },
+    { name: 'Lighthouse Canton', description: 'Wealth Management', logo: '/images/Logos/LC.png' },
+    { name: 'GetCopayHelp', description: 'Patient Financial Assistance', logo: '/images/Logos/Getcopay.jpeg' },
+    { name: 'To the New', description: 'Servicing Banking, Travel', logo: '/images/Logos/tothenew.jpeg' },
+    { name: 'Credit Saison', description: 'NBFC, Loan & Credit Line', logo: '/images/Logos/creditsaison.png' },
+    { name: 'Tata Sky', description: 'Entertainment', logo: '/images/Logos/Tata_Sky.webp' },
+    { name: 'Milaap', description: 'Social Crowdfunding', logo: '/images/Logos/milaap.jpeg' },
+    { name: 'Xperience Wave', description: 'Education, Health', logo: '/images/Logos/xw.png' },
+    { name: 'Motus', description: 'Banking, Vehicle reimbursement', logo: '/images/Logos/motus.jpeg' },
+    { name: 'Fortra', description: 'Data Security', logo: '/images/Logos/fortra.png' },
+    { name: 'KredX', description: 'Supply chain finance', logo: '/images/Logos/kredx.jpeg' },
+    { name: 'Westcon-Comstor', description: 'Servicing, IT distributor', logo: '/images/Logos/Westcon-Comstor.jpeg' },
   ];
 
   return (
