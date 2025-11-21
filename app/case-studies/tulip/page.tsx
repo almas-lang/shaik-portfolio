@@ -137,7 +137,7 @@ export default function TulipCaseStudy() {
 
       {/* Why This Case Matters Section */}
       <section className="bg-gradient-to-br from-[#22d3ee] to-[#06b6d4] py-12 md:py-16 lg:py-20 text-white">
-        <div className="container mx-auto max-w-5xl px-6 md:px-12 lg:px-20">
+        <div className="container mx-auto max-w-6xl px-6 md:px-12 lg:px-20">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
             Why This Case Matters
           </h2>
@@ -336,7 +336,7 @@ export default function TulipCaseStudy() {
       {/* Research Studies Section */}
       <section className="py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20 bg-white">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl lg:text-3xl font-bold mb-12 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
             Research Studies
           </h2>
 
@@ -437,7 +437,7 @@ export default function TulipCaseStudy() {
               3. Secondary data report
             </h3>
 
-            <div className="relative bg-white p-4 md:p-8 rounded-xl shadow-lg ">
+            <div className="relative">
               {/* Carousel Container */}
               <div className="overflow-hidden">
                 <div
@@ -447,7 +447,8 @@ export default function TulipCaseStudy() {
                   }}
                 >
                   {/* Slide 1 - Karnataka Demographics */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg font-bold text-gray-900 mb-6">
                       Karnataka demographics
                     </h4>
@@ -525,10 +526,12 @@ export default function TulipCaseStudy() {
                         </div>
                       </div>
                     </div>
+                    </div>
                   </div>
 
                   {/* Slide 2 - Donation Determinants */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg font-bold text-gray-900 mb-6">
                       Donation determinants
                     </h4>
@@ -646,9 +649,11 @@ export default function TulipCaseStudy() {
                         </ul>
                       </div>
                     </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
 
               {/* Carousel Dots */}
               <div className="flex items-center justify-center gap-2 mt-8">
@@ -723,8 +728,7 @@ export default function TulipCaseStudy() {
               Framework
             </h3>
 
-            {/* <div className="relative rounded-xl p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]"> */}
-            <div className="relative bg-white p-4 md:p-8 rounded-xl shadow-lg">
+            <div className="relative">
               {/* Carousel Container */}
               <div className="overflow-hidden">
                 <div
@@ -734,7 +738,8 @@ export default function TulipCaseStudy() {
                   }}
                 >
                   {/* Slide 1 - S: Set Objective */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
                       S - Set Objective
                     </h4>
@@ -774,10 +779,12 @@ export default function TulipCaseStudy() {
                         </h5>
                       </div>
                     </div>
+                    </div>
                   </div>
 
                   {/* Slide 2 - P: Prepare */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
                       P - Prepare
                     </h4>
@@ -881,10 +888,12 @@ export default function TulipCaseStudy() {
                         </div>
                       </div>
                     </div>
+                    </div>
                   </div>
 
                   {/* Slide 3 - E: Execute */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
                       E - Execute
                     </h4>
@@ -908,10 +917,12 @@ export default function TulipCaseStudy() {
                         className="w-full h-auto object-contain"
                       />
                     </div>
+                    </div>
                   </div>
 
                   {/* Slide 4 - A: Analyse */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
                       A - Analyse
                     </h4>
@@ -953,10 +964,12 @@ export default function TulipCaseStudy() {
                         </p>
                       </div>
                     </div>
+                    </div>
                   </div>
 
                   {/* Slide 5 - R: Report */}
-                  <div className="w-full flex-shrink-0 px-4">
+                  <div className="w-full flex-shrink-0">
+                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
                       R - Report
                     </h4>
@@ -1007,11 +1020,12 @@ export default function TulipCaseStudy() {
                         className="w-full h-auto object-contain"
                       />
                     </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Carousel Navigation */}
+              {/* Carousel Dots */}
               <div className="flex items-center justify-center gap-2 mt-8">
                 {[0, 1, 2, 3, 4].map((index) => (
                   <button
@@ -1071,8 +1085,7 @@ export default function TulipCaseStudy() {
                 </svg>
               </button>
             </div>
-          </div>
-        </div>
+            </div>
       </section>
 
       {/* What These Insights Triggered Internally Section */}
@@ -1103,7 +1116,7 @@ export default function TulipCaseStudy() {
           {/* Fundraising Journey Diagram - Carousel */}
           <div className="mb-12 relative">
             {/* Carousel Container */}
-            <div className="relative bg-white p-4 md:p-6 rounded-xl shadow-lg overflow-hidden">
+            <div className="relative overflow-hidden">
               <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{
@@ -1111,25 +1124,29 @@ export default function TulipCaseStudy() {
                 }}
               >
                 {/* Slide 1 - Fundraising Journey */}
-                <div className="w-full flex-shrink-0 px-4">
-                  <Image
-                    src="/images/Tulip/fundraising.svg"
-                    alt="Fundraising User Journey - Pre, During, and Post Fundraising Phases"
-                    width={1200}
-                    height={600}
-                    className="w-full h-auto object-contain"
-                  />
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/fundraising.svg"
+                      alt="Fundraising User Journey - Pre, During, and Post Fundraising Phases"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </div>
 
                 {/* Slide 2 - Signup/Pre-setup */}
-                <div className="w-full flex-shrink-0 px-4">
-                  <Image
-                    src="/images/Tulip/11.svg"
-                    alt="Signup and Pre-setup flow - Utiliser types and details"
-                    width={1200}
-                    height={600}
-                    className="w-full h-auto object-contain"
-                  />
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/11.svg"
+                      alt="Signup and Pre-setup flow - Utiliser types and details"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1388,53 +1405,57 @@ export default function TulipCaseStudy() {
         <div className="container mx-auto max-w-5xl">
           <div className="relative">
             {/* Carousel Container */}
-            <div className="relative bg-white p-4 md:p-8 rounded-xl shadow-lg overflow-hidden">
+            <div className="relative overflow-hidden">
               <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentQASSlide * 100}%)` }}
               >
                 {/* Slide 1 - QAS Interface */}
-                <div className="w-full flex-shrink-0 px-4">
-                  <Image
-                    src="/images/Tulip/17.svg"
-                    alt="QAS Interactive popup showing Build your story interface with questions and live preview"
-                    width={1000}
-                    height={700}
-                    className="w-320px h-auto object-contain"
-                  />
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/17.svg"
+                      alt="QAS Interactive popup showing Build your story interface with questions and live preview"
+                      width={1000}
+                      height={700}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </div>
 
                 {/* Slide 2 - First Two Images */}
-                <div className="w-full flex-shrink-0 px-4">
-                  <div className="grid grid-cols-4 gap-2">
-                    <Image
-                      src="/images/Tulip/30.svg"
-                      alt="QAS flow step 1 - I am a student"
-                      width={500}
-                      height={600}
-                      className="w-[350px] h-auto object-contain"
-                    />
-                    <Image
-                      src="/images/Tulip/31.svg"
-                      alt="QAS flow step 2 - I am studying in"
-                      width={500}
-                      height={600}
-                      className="w-[350px] h-auto object-contain"
-                    />
-                    <Image
-                      src="/images/Tulip/32.svg"
-                      alt="QAS flow step 3 - I live in Bengaluru (with)"
-                      width={500}
-                      height={600}
-                      className="w-[320px] h-auto object-contain"
-                    />
-                    <Image
-                      src="/images/Tulip/33.svg"
-                      alt="QAS flow step 4 - In the next 30 days"
-                      width={500}
-                      height={600}
-                      className="w-[320px] h-auto object-contain"
-                    />
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+                      <Image
+                        src="/images/Tulip/30.svg"
+                        alt="QAS flow step 1 - I am a student"
+                        width={500}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
+                      <Image
+                        src="/images/Tulip/31.svg"
+                        alt="QAS flow step 2 - I am studying in"
+                        width={500}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
+                      <Image
+                        src="/images/Tulip/32.svg"
+                        alt="QAS flow step 3 - I live in Bengaluru (with)"
+                        width={500}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
+                      <Image
+                        src="/images/Tulip/33.svg"
+                        alt="QAS flow step 4 - In the next 30 days"
+                        width={500}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

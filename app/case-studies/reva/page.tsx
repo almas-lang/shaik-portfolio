@@ -54,9 +54,10 @@ export default function RevaCaseStudy() {
       </section>
 
       {/* Video/Image Placeholder */}
-      <section className="py-12 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5]">
+      <section className="py-12 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5] relative bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/section2-bg.svg')" }}>
         <div className="container mx-auto max-w-7xl pb-12">
-          <div className="aspect-video bg-black rounded-2xl flex items-center justify-center">
+          <div className="aspect-video bg-black rounded-md flex items-center justify-center">
             <div className="w-20 h-20 rounded-full bg-[#E63A46] flex items-center justify-center">
               <svg
                 className="w-10 h-10 text-white ml-2"
@@ -74,7 +75,7 @@ export default function RevaCaseStudy() {
         {/* <section className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5]"> */}
         <div className="container mx-auto max-w-7xl">
           {/* White container that looks like a page */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 lg:p-16">
+          <div className="bg-white rounded-md shadow-xl p-8 md:p-12 lg:p-16">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Left Column */}
               <div>
@@ -224,14 +225,17 @@ export default function RevaCaseStudy() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5]">
-        <div className="container mx-auto max-w-6xl">
+      <section
+        className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5] relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/section-bg.svg')" }}
+      >
+        <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#5b3a8f] mb-12">
             Overview
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <div className="bg-white p-8 rounded-xs shadow-sm">
               <h3 className="text-sm font-semibold text-gray-600 mb-3">
                 Technology
               </h3>
@@ -239,7 +243,7 @@ export default function RevaCaseStudy() {
                 AES-256-bit military grade encryption
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-white p-8 rounded-xs shadow-sm">
               <h3 className="text-sm font-semibold text-gray-600 mb-3">
                 Funded by
               </h3>
@@ -247,7 +251,7 @@ export default function RevaCaseStudy() {
                 Acquired for $13.9M by Fortra
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-white p-8 rounded-xs shadow-sm">
               <h3 className="text-sm font-semibold text-gray-600 mb-3">USP</h3>
               <p className="text-lg font-bold text-gray-800">
                 Protect sensitive files wherever they travelled (even when
@@ -256,11 +260,11 @@ export default function RevaCaseStudy() {
             </div>
           </div>
 
-          <div className="mb-12">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <div className="mb-8">
+            <h3 className="text-lg text-gray-700 mb-2">
               Work culture
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-900 max-w-[500px] font-semibold">
               Engineering-first mindset (3 Designers among 70+ engineers).
               Product worked directly with tech, design was brought in late to
               'make it look good'
@@ -299,8 +303,8 @@ export default function RevaCaseStudy() {
             Constraints & challenges
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <div className="border border-blue-200 rounded-xl p-8">
+          <div className="grid lg:grid-cols-2 gap-2 mb-12">
+            <div className="border border-white rounded-xl p-2">
               <div className="aspect-square bg-gray-100 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/REVA_Security/ecosystem.svg"
@@ -310,7 +314,7 @@ export default function RevaCaseStudy() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg font-semibold">
                 Reva's ecosystem was complex - one customer could involve six
                 internal teams and six distinct user types. Every workflow was
                 burdened with compliance, security, and cross-department
@@ -318,17 +322,17 @@ export default function RevaCaseStudy() {
               </p>
             </div>
 
-            <div className="border border-blue-200 rounded-xl p-8">
+            <div className="border border-white rounded-xl p-2">
               <div className="mb-6">
                 <Image
                   src="/images/REVA_Security/aat.svg"
                   alt="Average Acquisition Timeline"
                   width={600}
                   height={400}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg font-semibold">
                 Customer acquisition timelines stretched up to 180 days, with
                 upto 17 touch-points before closure. Each deal required heavy
                 sales involvement, and design & product had minimal influence
@@ -341,11 +345,11 @@ export default function RevaCaseStudy() {
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0">
                 <Image
-                  src="/images/award-icon.svg"
+                  src="/images/award-icon2.svg"
                   alt="Success"
                   width={60}
                   height={60}
-                  className="w-[80px] h-auto invert"
+                  className="w-[80px] h-auto"
                 />
               </div>
               <div>
@@ -364,25 +368,26 @@ export default function RevaCaseStudy() {
       </section>
 
       {/* Study & Insights - Carousel 1 */}
-      <section className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5]">
+      <section className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5] relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/section-bg.svg')" }}>
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-[#5b3a8f] mb-8">
             Study & Insights
           </h2>
 
-          <div className="mb-8">
-            <p className="text-gray-700 mb-4">
+          <div className="mb-8 grid md:grid-cols-2 gap-2 items-center font-semibold">
+            <p className="text-gray-700 text-lg max-w-[400px]">
               Began by shadowing the people who actually sold and implemented
-              Reba. Over 3 weeks of generative research
+              Reva. Over 3 weeks of generative research
             </p>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-700 text-lg">
               <li>• Shadowed 12 sales calls & 10 onboarding sessions</li>
               <li>• Conducted 10 moderated in-depth interviews</li>
               <li>• Studied 32 hrs. of live observation + 7 hrs. recorded</li>
             </ul>
           </div>
 
-          <div className="relative bg-white p-4 md:p-8 rounded-xl shadow-lg">
+          <div className="relative">
             {/* Carousel Content */}
             <div className="overflow-hidden">
               <div
@@ -391,19 +396,29 @@ export default function RevaCaseStudy() {
               >
                 {/* Slide 1 */}
                 <div className="min-w-full">
-                  <div className="bg-white rounded p-4 md:p-8"></div>
-                  <Image
-                    src="/images/REVA_Security/slide1.svg"
-                    alt=""
-                    width={1200}
-                    height={400}
-                    className="w-full h-auto object-contain"
-                  />
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <Image
+                        src="/images/REVA_Security/slide1-a.svg"
+                        alt="Slide 1 Part A"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto object-contain"
+                      />
+                      <Image
+                        src="/images/REVA_Security/slide1-b.svg"
+                        alt="Slide 1 Part B"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Slide 2 */}
                 <div className="min-w-full">
-                  <div className="bg-white rounded p-4 md:p-8">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                       {/* Left side - Text content */}
                       <div className="lg:col-span-3 space-y-4 lg:space-y-8">
@@ -555,7 +570,7 @@ export default function RevaCaseStudy() {
 
                 {/* Slide 3 */}
                 <div className="min-w-full">
-                  <div className="bg-white rounded p-4 md:p-8">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="grid lg:grid-cols-3 gap-6">
                       {/* Left Column - 2x2 Stats Grid */}
                       <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-0 border border-gray-300">
@@ -618,7 +633,7 @@ export default function RevaCaseStudy() {
 
                 {/* Slide 4 */}
                 <div className="min-w-full">
-                  <div className="bg-white rounded p-4 md:p-8">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <h3 className="text-2xl md:text-3xl font-bold text-[#5b7cff] mb-4">
                       Journey map
                     </h3>
@@ -722,7 +737,7 @@ export default function RevaCaseStudy() {
 
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 The findings pointed to one clear opportunity: "Can we help
                 non-technical buyers experience the feeling of security -
                 without involving the sales team?" So we segmented our audience
@@ -733,7 +748,7 @@ export default function RevaCaseStudy() {
               </p>
             </div>
             <div>
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-4 text-gray-700 text-lg">
                 <li className="flex gap-2">
                   <span>•</span>
                   <span>
@@ -767,7 +782,7 @@ export default function RevaCaseStudy() {
       </section>
 
       {/* Study & Insights - Hypothesis */}
-      <section className="py-16 px-4 md:px-6 bg-[#2d2d3f] text-white">
+      <section className="py-16 px-4 md:px-6 bg-[#2F2E41] text-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-8">
             Study & Insights
@@ -775,7 +790,7 @@ export default function RevaCaseStudy() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-xl italic mb-12">
+              <p className="text-lg italic mb-12">
                 Reframed the goal from selling security to scaling trust
               </p>
               <h3 className="text-2xl font-bold mb-6">Hypothesis:</h3>
@@ -808,7 +823,7 @@ export default function RevaCaseStudy() {
             Design approach and decisions logs
           </h2>
 
-          <p className="text-gray-700 mb-12">
+          <p className="text-gray-700 mb-12 text-lg">
             We used a hybrid of Lean UX + DATDSDL (Discover, Analyse, Template,
             Detailed, Summative testing, Dev hand-off, Learn) and a proprietary
             Concept-Structure-Detailed loop. The idea was simple: solve the
@@ -821,16 +836,15 @@ export default function RevaCaseStudy() {
 
           {/* Carousel wrapper with arrows outside */}
           <div className="relative">
-            {/* White container for carousel */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              {/* Carousel Content */}
-              <div className="overflow-hidden">
-                <div
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${currentSlide2 * 100}%)` }}
-                >
-                  {/* Slide 1 - Previous */}
-                  <div className="min-w-full">
+            {/* Carousel Content */}
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentSlide2 * 100}%)` }}
+              >
+                {/* Slide 1 - Previous */}
+                <div className="min-w-full">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <Image
                       src="/images/REVA_Security/previous.svg"
                       alt="Previous funnel - showing the complex customer journey"
@@ -839,9 +853,11 @@ export default function RevaCaseStudy() {
                       className="w-full h-auto object-contain"
                     />
                   </div>
+                </div>
 
-                  {/* Slide 2 - Later */}
-                  <div className="min-w-full">
+                {/* Slide 2 - Later */}
+                <div className="min-w-full">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <Image
                       src="/images/REVA_Security/later.svg"
                       alt="Redesigned funnel - simplified customer journey"
@@ -854,12 +870,12 @@ export default function RevaCaseStudy() {
               </div>
             </div>
 
-            {/* Carousel Navigation Arrows - Outside container */}
+            {/* Carousel Navigation Arrows */}
             <button
               onClick={() =>
                 setCurrentSlide2(currentSlide2 > 0 ? currentSlide2 - 1 : 1)
               }
-              className="absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
               <svg
                 className="w-6 h-6 text-gray-800"
@@ -879,7 +895,7 @@ export default function RevaCaseStudy() {
               onClick={() =>
                 setCurrentSlide2(currentSlide2 < 1 ? currentSlide2 + 1 : 0)
               }
-              className="absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
               <svg
                 className="w-6 h-6 text-gray-800"
@@ -1086,7 +1102,7 @@ export default function RevaCaseStudy() {
               >
                 {/* Slide 1 - vd1.svg */}
                 <div className="w-full flex-shrink-0">
-                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
                       <Image
                         src="/images/REVA_Security/vd1.svg"
@@ -1101,7 +1117,7 @@ export default function RevaCaseStudy() {
 
                 {/* Slide 2 - vd2.svg */}
                 <div className="w-full flex-shrink-0">
-                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
                       <Image
                         src="/images/REVA_Security/vd2.svg"
@@ -1116,7 +1132,7 @@ export default function RevaCaseStudy() {
 
                 {/* Slide 3 - vd3.svg */}
                 <div className="w-full flex-shrink-0">
-                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
                       <Image
                         src="/images/REVA_Security/vd3.svg"
@@ -1131,7 +1147,7 @@ export default function RevaCaseStudy() {
 
                 {/* Slide 4 - vd4.svg */}
                 <div className="w-full flex-shrink-0">
-                  <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
                     <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
                       <Image
                         src="/images/REVA_Security/vd4.svg"
