@@ -1,23 +1,26 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section
-      className="w-full bg-[#f5f5f5] pb-12 md:pb-16"
+      className="w-full bg-[#f5f5f5] pb-12 md:pb-16 relative bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/hero-bg.svg')" }}
     >
       <div className="mx-auto max-w-7xl px-4 md:px-6 pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12">
         {/* Hero Title */}
         <h1 className="max-w-2xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#5b3a8f] leading-tight mb-6 sm:mb-8 lg:mb-10">
           I'm Shaik Murad,
-          <br />
-          I help growth happen
+          <br />I help growth happen
         </h1>
 
         {/* Project Cards */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-5 lg:gap-6 mb-5 lg:mb-6 md:items-start">
           {/* REVA Card */}
-          <Link href="/case-studies/reva" className="bg-[#242424] rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col w-full md:w-1/2 lg:w-[500px] min-h-[280px] md:min-h-[360px] hover:shadow-2xl transition-shadow cursor-pointer">
+          <Link
+            href="/case-studies/reva"
+            className="bg-[#242424] rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col w-full md:w-1/2 lg:w-[500px] min-h-[280px] md:min-h-[360px] hover:shadow-2xl transition-shadow cursor-pointer"
+          >
             <div className="mb-4 md:mb-8 lg:mb-12 relative">
               <div className="relative inline-flex items-center">
                 <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-[#FFCB00] flex items-center justify-center">
@@ -31,14 +34,18 @@ export default function Hero() {
               </div>
             </div>
 
-            <p className="text-white text-[14px] sm:text-[15px] md:text-[17px] leading-relaxed mb-auto max-w-[400px]">
+            <p className="pb-5 text-white text-[14px] sm:text-[15px] md:text-[17px] leading-relaxed mb-auto max-w-[350px]">
               Reduced customer onboarding time to just 10.2 days (earlier 180
               days) without increasing CAC.
             </p>
 
+            <span>#Datasecurity</span>
+
             <div className="flex items-center justify-end mt-3 md:mt-6">
               <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
-                <span className="text-sm sm:text-base md:text-lg">Find out how</span>
+                <span className="text-sm sm:text-base md:text-lg">
+                  Find out how
+                </span>
                 <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
                   <svg
                     className="w-6 h-6"
@@ -59,30 +66,39 @@ export default function Hero() {
           </Link>
 
           {/* Skaeyl Card */}
-          <Link href="/case-studies/tulip" className="bg-[#242424] rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col w-full md:w-1/2 lg:w-[500px] min-h-[280px] md:min-h-[360px] hover:shadow-2xl transition-shadow cursor-pointer">
+          <Link
+            href="/case-studies/tulip"
+            className="bg-[#242424] rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 text-white relative overflow-hidden flex flex-col w-full md:w-1/2 lg:w-[500px] min-h-[280px] md:min-h-[360px] hover:shadow-2xl transition-shadow cursor-pointer"
+          >
             <div className="mb-4 md:mb-8 lg:mb-12">
               <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-                <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-white flex items-center justify-center p-2 md:p-3">
+                {/* <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-white flex items-center justify-center p-2 md:p-3"> */}
                   <Image
-                    src="/images/skaeyl-logo.svg"
-                    alt="Skaeyl Logo"
-                    width={72}
-                    height={72}
-                    className="w-full h-full object-contain"
+                    src="/images/Tulip/tulip-logo2.svg"
+                    alt="Tulip Logo"
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 md:w-16 md:h-16 object-contain"
                   />
-                </div>
-                <h2 className="text-[28px] sm:text-[36px] md:text-[42px] font-bold leading-none font-heading">Skaeyl</h2>
+                {/* </div> */}
+                <h2 className="text-[28px] sm:text-[36px] md:text-[42px] font-bold leading-none font-heading">
+                  Tulip
+                </h2>
               </div>
             </div>
 
-            <p className="text-white text-[14px] sm:text-[15px] md:text-[17px] leading-relaxed mb-auto max-w-[400px]">
-              0→1 AI powered mentor OS - Acquired 122 students &amp; 6 trainers
-              in 1st 4 months (&amp; onto winning a $4.3T edu market)
+            <p className="pb-6 text-white text-[14px] sm:text-[15px] md:text-[17px] leading-relaxed mb-auto max-w-[400px]">
+              Achieved 28% more revenue and 12% more customer base in 5
+              months using innovative storytelling and pricing models
             </p>
+
+            <span>#Crowdfunding</span>
 
             <div className="flex items-center justify-end mt-3 md:mt-6">
               <div className="flex items-center gap-2 md:gap-3 text-white font-medium group">
-                <span className="text-sm sm:text-base md:text-lg">Find out how</span>
+                <span className="text-sm sm:text-base md:text-lg">
+                  Find out how
+                </span>
                 <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-[#E63A46] flex items-center justify-center group-hover:bg-[#d12835] transition-colors">
                   <svg
                     className="w-6 h-6"

@@ -1376,22 +1376,20 @@ export default function RevaCaseStudy() {
               >
                 <div className="mb-6 md:mb-8">
                   <div className="flex items-center gap-3 md:gap-4">
-                    <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-white flex items-center justify-center p-2 md:p-3">
-                      <Image
-                        src="/images/skaeyl-logo.svg"
-                        alt="Skaeyl Logo"
-                        width={72}
-                        height={72}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-none font-heading">Skaeyl</h2>
+                    <Image
+                      src="/images/Tulip/tulip-logo2.svg"
+                      alt="Tulip Logo"
+                      width={120}
+                      height={120}
+                      className="w-20 h-20 md:w-16 md:h-16 object-contain"
+                    />
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-none font-heading">Tulip</h2>
                   </div>
                 </div>
 
                 <p className="text-white text-lg leading-relaxed mb-auto">
-                  0→1 AI powered mentor OS - Acquired 122 students &amp; 6 trainers
-                  in 1st 4 months (&amp; onto winning a $4.3T edu market)
+                  Achieved 28% more revenue and 12% more customer base in 5
+                  months using innovative storytelling and pricing models
                 </p>
 
                 <div className="flex items-center justify-end mt-6">

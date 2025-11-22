@@ -48,7 +48,7 @@ export default function Accolades() {
                   />
                 </div>
                 {/* <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">{award.title}</h3> */}
-                <p className="text-gray-400 text-xs md:text-sm leading-relaxed px-2">
+                <p className="text-white text-md md:text-md leading-relaxed px-2">
                   {award.organization}
                 </p>
               </div>

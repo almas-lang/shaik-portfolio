@@ -12,7 +12,7 @@ export default function TulipCaseStudy() {
   const [currentQASSlide, setCurrentQASSlide] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FcFcfc] to-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#FFFFFF] to-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
         <div className="container mx-auto px-6 py-4">
@@ -27,8 +27,11 @@ export default function TulipCaseStudy() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-24 pb-12 px-6 md:px-12 lg:px-20">
+      {/* Hero Section - Achievement & Disclaimer */}
+      <section
+        className="pt-24 pb-12 px-6 md:px-12 lg:px-20 relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/Tulip/hero-bg.svg')" }}
+      >
         <div className="container mx-auto max-w-5xl">
           {/* Title and Achievement */}
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 mb-8">
@@ -46,7 +49,8 @@ export default function TulipCaseStudy() {
             {/* Achievement Text */}
             <div className="flex-1">
               <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#F803FE] mb-4 leading-tight ">
-                Achieved <span className="text-gray-900">28% more revenue</span>{" "}
+                Achieved{" "}
+                <span className="text-gray-900">28% more revenue</span>{" "}
                 <span className="text-[#F803FE]">and</span>{" "}
                 <span className="text-gray-900">12% more customer base</span>{" "}
                 <span className="text-[#F803FE]">in</span>{" "}
@@ -68,15 +72,19 @@ export default function TulipCaseStudy() {
                 <p className="text-lg text-gray-700 text-center">
                   <span className="font-semibold">Disclaimer:</span> I've kept
                   the organisation name redacted as "Tulip". I genuinely don't
-                  want people messing with an ecosystem that's running thousands
-                  of active emergency fundraisers.
+                  want people messing with an ecosystem that's running
+                  thousands of active emergency fundraisers.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+      {/* What is Tulip Section */}
+      <section className="py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left Column - What is Tulip */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
@@ -289,9 +297,7 @@ export default function TulipCaseStudy() {
 
           {/* Revenue Stats */}
           <div className="mb-8">
-            <p className="text-lg text-gray-700 mb-2">
-              This engine produced
-            </p>
+            <p className="text-lg text-gray-700 mb-2">This engine produced</p>
             <h3 className="text-3xl md:text-4xl lg:text-2xl font-bold mb-4 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
               92% of Tulip's entire revenue
             </h3>
@@ -334,7 +340,7 @@ export default function TulipCaseStudy() {
       </section>
 
       {/* Research Studies Section */}
-      <section className="py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20 bg-white">
+      <section className="py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20 bg-[#fcfcfc]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl lg:text-3xl font-bold mb-12 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
             Research Studies
@@ -437,7 +443,7 @@ export default function TulipCaseStudy() {
               3. Secondary data report
             </h3>
 
-            <div className="relative">
+            <div className="relative max-w-5xl mx-auto">
               {/* Carousel Container */}
               <div className="overflow-hidden">
                 <div
@@ -446,214 +452,33 @@ export default function TulipCaseStudy() {
                     transform: `translateX(-${currentSecondarySlide * 100}%)`,
                   }}
                 >
-                  {/* Slide 1 - Karnataka Demographics */}
+                  {/* Slide 1 */}
                   <div className="w-full flex-shrink-0">
                     <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg font-bold text-gray-900 mb-6">
-                      Karnataka demographics
-                    </h4>
-
-                    <div className="grid lg:grid-cols-[280px_1fr] gap-8 items-start">
-                      {/* Map */}
-                      <div className="bg-white rounded-3xl p-6">
-                        <Image
-                          src="/images/Tulip/karnataka-map.svg"
-                          alt="Karnataka Map"
-                          width={280}
-                          height={400}
-                          className="w-full h-auto object-contain"
-                        />
-                      </div>
-
-                      {/* Stats and Info */}
-                      <div className="space-y-6">
-                        {/* Top Stats Row */}
-                        <div className="grid grid-cols-3 gap-6">
-                          <div>
-                            <h5 className="text-2xl md:text-xl font-bold text-gray-900 mb-1">
-                              6.11 Cr
-                            </h5>
-                            <p className="text-sm text-gray-600">
-                              Study location
-                            </p>
-                          </div>
-                          <div>
-                            <h5 className="text-2xl md:text-xl font-bold text-gray-900 mb-1">
-                              3.09 Cr & 3.01 Cr
-                            </h5>
-                            <p className="text-sm text-gray-600">
-                              Male & female
-                            </p>
-                          </div>
-                          <div>
-                            <h5 className="text-2xl md:text-xl font-bold text-gray-900 mb-1">
-                              75.36%
-                            </h5>
-                            <p className="text-sm text-gray-600">
-                              Literacy rate
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* Urban vs Rural Box */}
-                        <div className="relative rounded-xl p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-xl p-6">
-                            <div className="grid md:grid-cols-2 gap-6 divide-x divide-gray-200">
-                              <div className="pr-6">
-                                <h6 className="text-sm font-bold text-gray-900 mb-3">
-                                  Urban specific
-                                </h6>
-                                <p className="text-sm text-gray-700 leading-relaxed">
-                                  With avg. literacy of 85.78%, about 38.67%
-                                  people live in Bangalore, Mysuru, Mangalore,
-                                  Hubballi - Dharwad, Belagavi, Gulbarga, Bidar,
-                                  and Bellary.
-                                </p>
-                              </div>
-                              <div className="pl-6">
-                                <h6 className="text-sm font-bold text-gray-900 mb-3">
-                                  Rural specific
-                                </h6>
-                                <p className="text-sm text-gray-700 leading-relaxed">
-                                  With avg. literacy of 68.73%, about 61.33%
-                                  people live in Hassan, Shivamogga, Davangere,
-                                  Chitradurga, Tumkuru, Raichur, Bagalkot,
-                                  Koppal, Gadag, and Kodagu (Coorg).
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      <Image
+                        src="/images/Tulip/report-slide1.svg"
+                        alt="Secondary Data Report - Karnataka Demographics"
+                        width={1200}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
                     </div>
                   </div>
 
-                  {/* Slide 2 - Donation Determinants */}
+                  {/* Slide 2 */}
                   <div className="w-full flex-shrink-0">
                     <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg font-bold text-gray-900 mb-6">
-                      Donation determinants
-                    </h4>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                      {/* Social and Cultural */}
-                      <div>
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] flex items-center justify-center">
-                            <Image
-                              src="/images/Tulip/social.svg"
-                              alt="Social Icon"
-                              width={24}
-                              height={24}
-                              className="w-6 h-6"
-                            />
-                          </div>
-                          <div className="h-[2px] flex-1 bg-gradient-to-r from-[#F803FE] to-transparent"></div>
-                        </div>
-                        <h5 className="text-base font-bold text-gray-900 mb-4">
-                          Social and cultural
-                        </h5>
-                        <ul className="space-y-2 text-sm text-gray-700">
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Religious values strongly influence giving and
-                              asking
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Poverty + inequality both motivate and discourage
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Govt. tax policies impact giving behaviour
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      {/* Psychological */}
-                      <div>
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] flex items-center justify-center">
-                            <Image
-                              src="/images/Tulip/psycological.svg"
-                              alt="Psychological Icon"
-                              width={24}
-                              height={24}
-                              className="w-6 h-6"
-                            />
-                          </div>
-                          <div className="h-[2px] flex-1 bg-gradient-to-r from-[#F803FE] to-transparent"></div>
-                        </div>
-                        <h5 className="text-base font-bold text-gray-900 mb-4">
-                          Psychological
-                        </h5>
-                        <ul className="space-y-2 text-sm text-gray-700">
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>Empathy and altruism are major drives</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Personal morals, values, upbringing shape donation
-                              choices
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      {/* Demographic */}
-                      <div>
-                        <h5 className="text-base font-bold text-gray-900 mb-4">
-                          Demographic
-                        </h5>
-                        <ul className="space-y-2 text-sm text-gray-700">
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>Younger donors prefer online</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>Older donors prefer traditional</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Women donate more from empathy; men donate more
-                              from recognition
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>Higher income = higher giving</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Higher education = more financial contributions
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-gray-900 mt-1">•</span>
-                            <span>
-                              Married couples statistically donate more
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                      <Image
+                        src="/images/Tulip/report-slide2.svg"
+                        alt="Secondary Data Report - Donation Determinants"
+                        width={1200}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
               {/* Carousel Dots */}
               <div className="flex items-center justify-center gap-2 mt-8">
@@ -673,9 +498,7 @@ export default function TulipCaseStudy() {
               {/* Navigation Arrows */}
               <button
                 onClick={() =>
-                  setCurrentSecondarySlide(
-                    Math.max(0, currentSecondarySlide - 1)
-                  )
+                  setCurrentSecondarySlide(Math.max(0, currentSecondarySlide - 1))
                 }
                 disabled={currentSecondarySlide === 0}
                 className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
@@ -697,9 +520,7 @@ export default function TulipCaseStudy() {
 
               <button
                 onClick={() =>
-                  setCurrentSecondarySlide(
-                    Math.min(1, currentSecondarySlide + 1)
-                  )
+                  setCurrentSecondarySlide(Math.min(1, currentSecondarySlide + 1))
                 }
                 disabled={currentSecondarySlide === 1}
                 className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
@@ -720,372 +541,150 @@ export default function TulipCaseStudy() {
               </button>
             </div>
           </div>
+        </div>
 
-          {/* 4. SPEAR Framework - Carousel */}
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold mb-6 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
-              4. SPEAR (Set objective, Prepare, Execute, Analyse, and Report)
-              Framework
-            </h3>
+        {/* 4. SPEAR Framework - Carousel */}
+        <div className="mb-12">
+          <h3 className="text-xl md:text-2xl font-bold mb-6 bg-gradient-to-r from-[#F803FE] to-[#0ECBDE] bg-clip-text text-transparent">
+            4. SPEAR (Set objective, Prepare, Execute, Analyse, and Report)
+            Framework
+          </h3>
 
-            <div className="relative">
-              {/* Carousel Container */}
-              <div className="overflow-hidden">
-                <div
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{
-                    transform: `translateX(-${currentSpearSlide * 100}%)`,
-                  }}
-                >
-                  {/* Slide 1 - S: Set Objective */}
-                  <div className="w-full flex-shrink-0">
-                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
-                      S - Set Objective
-                    </h4>
-
-                    {/* Dart Image */}
-                    <div className="flex justify-start mb-8">
-                      <Image
-                        src="/images/Tulip/dart.svg"
-                        alt="Set Objective"
-                        width={149}
-                        height={149}
-                        className="w-32 h-32 md:w-36 md:h-36 lg:w-[149px] lg:h-[149px] object-contain"
-                      />
-                    </div>
-
-                    {/* Three Objectives in Columns */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                      <div>
-                        <p className="text-lg text-gray-800 leading-relaxed">
-                          Understand why people donate - motivations,
-                          frustrations, emotional triggers. Compare differences
-                          between urban and rural donors.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-lg text-gray-800 leading-relaxed">
-                           Understand how social, cultural, demographic, and
-                          economic factors affect donation behaviour.Build hypotheses and segment markets.
-                        </p>
-                      </div>
-                      <div>
-                        <h5 className="ttext-lg text-gray-800 leading-relaxed">
-                          Build a geographical + behavioural segmentation
-                          strategy, TAM sizing, GTM outline, and service
-                          touchpoints adapted for Karnataka's tier 2/3/rural
-                          markets.
-                        </h5>
-                      </div>
-                    </div>
-                    </div>
+          <div className="relative max-w-5xl mx-auto">
+            {/* Carousel Container */}
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{
+                  transform: `translateX(-${currentSpearSlide * 100}%)`,
+                }}
+              >
+                {/* Slide 1 */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/spear-slide1.svg"
+                      alt="SPEAR Framework - Set Objective"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
+                </div>
 
-                  {/* Slide 2 - P: Prepare */}
-                  <div className="w-full flex-shrink-0">
-                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
-                      P - Prepare
-                    </h4>
-
-                    {/* Top Three Columns */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10">
-                      {/* 430+ quant participants */}
-                      <div>
-                        <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                          430+ quant participants
-                        </h5>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                          Random sampling, statistically significant, 90%
-                          confidence level, error margin of 0.1
-                        </p>
-                      </div>
-
-                      {/* 14 qual participants */}
-                      <div>
-                        <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                          14 qual participants
-                        </h5>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                          2 user ship reps: Married-Salaried-RegDonor &
-                          Unmarried-Income-OfflineDonor
-                        </p>
-                      </div>
-
-                      {/* Data collection location */}
-                      <div>
-                        <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                          Data collection location
-                        </h5>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                          Roads, Bus stops, Partnered hospitals, Offshore team
-                          neighbourhood families
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Study segments section */}
-                    <div className="mb-8">
-                      <h5 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
-                        Study segments
-                      </h5>
-                      <p className="text-sm text-gray-600 mb-6">
-                        (Influenced by objectives)
-                      </p>
-
-                      {/* First row - 2 boxes */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-lg text-gray-800 leading-relaxed">
-                              <span className="font-bold">●</span> Demography:
-                              Residing location, residing duration, age, gender,
-                              highest education background, marital status,
-                              children
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-lg text-gray-800 leading-relaxed">
-                              <span className="font-bold">●</span> Donation
-                              behaviour: Donation frequency, donation amount,
-                              repeated causes, motivations, frustrations
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Second row - 3 boxes */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-lg text-gray-800 leading-relaxed">
-                              <span className="font-bold">●</span> Economic:
-                              Annual income, employment status
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-lg text-gray-800 leading-relaxed">
-                              <span className="font-bold">●</span> Government
-                              policies: Tax incentive awareness
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="relative rounded-[20px] p-[1px] bg-gradient-to-r from-[#F803FE] to-[#0ECBDE]">
-                          <div className="bg-white rounded-[18px] p-4 md:p-6">
-                            <p className="text-lg text-gray-800 leading-relaxed">
-                              <span className="font-bold">●</span> Social and
-                              cultural backgrounds
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
+                {/* Slide 2 */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/spear-slide2.svg"
+                      alt="SPEAR Framework - Prepare"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
+                </div>
 
-                  {/* Slide 3 - E: Execute */}
-                  <div className="w-full flex-shrink-0">
-                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
-                      E - Execute
-                    </h4>
-                    <h4 className="text-md md:text-md font-semibold text-gray-900 mb-3">
-                      We collected 500+ survey responses and ran 14 face-to-face
-                      interviews.{" "}
-                    </h4>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <Image
-                        src="/images/Tulip/rreport.svg"
-                        alt="Survey Report"
-                        width={400}
-                        height={600}
-                        className="w-full h-auto object-contain"
-                      />
-                      <Image
-                        src="/images/Tulip/transcript.svg"
-                        alt="Interview Transcript"
-                        width={400}
-                        height={600}
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
-                    </div>
+                {/* Slide 3 */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/spear-slide3.svg"
+                      alt="SPEAR Framework - Execute"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
+                </div>
 
-                  {/* Slide 4 - A: Analyse */}
-                  <div className="w-full flex-shrink-0">
-                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
-                      A - Analyse
-                    </h4>
-
-                    <h4 className="text-md md:text-md font-semibold text-gray-900 mb-3">
-                      To deal with quant we used - statistical analysis +
-                      percentage distribution + inferential stats (t-tests){" "}
-                    </h4>
-
-                    <div className="grid md:grid-cols-3 gap-6">
-                      <Image
-                        src="/images/Tulip/age-group.svg"
-                        alt="Age Group Analysis"
-                        width={300}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                      />
-                      <Image
-                        src="/images/Tulip/emergency.svg"
-                        alt="Emergency Analysis"
-                        width={300}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                      />
-                      <div>
-                        <h5 className="text-xl md:text-xl font-semibold text-gray-900 mb-3">
-                          T-test results
-                        </h5>
-                        <Image
-                          src="/images/Tulip/t-test.svg"
-                          alt="T-Test Analysis"
-                          width={300}
-                          height={400}
-                          className="w-full h-auto object-contain"
-                        />
-                        <p className="text-md md:text-md font-regular text-gray-900 mt-3">
-                          Comparing mean donation frequency between urban and
-                          rural areas
-                        </p>
-                      </div>
-                    </div>
-                    </div>
+                {/* Slide 4 */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/spear-slide4.svg"
+                      alt="SPEAR Framework - Analyse"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
+                </div>
 
-                  {/* Slide 5 - R: Report */}
-                  <div className="w-full flex-shrink-0">
-                    <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
-                    <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-8">
-                      R - Report
-                    </h4>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                      {/* T-test results - Cyan Box */}
-                      <Image
-                        src="/images/Tulip/ttest-result.svg"
-                        alt="T-Test Analysis"
-                        width={300}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                      />
-
-                      {/* Codes & Themes - White Box with Border */}
-                      <div className="relative rounded-3xl p-[2px] bg-gradient-to-r from-[#22d3ee] to-[#06b6d4]">
-                        <div className="bg-white rounded-3xl p-6 md:p-8 h-full">
-                          <h5 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
-                            Codes & Themes
-                          </h5>
-                          <ul className="space-y-3 text-lg text-gray-800">
-                            <li className="flex items-start gap-2">
-                              <span className="font-bold mt-1">•</span>
-                              <span>Trust and transparency</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="font-bold mt-1">•</span>
-                              <span>Engagement and storytelling</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="font-bold mt-1">•</span>
-                              <span>Convenience and integration</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="font-bold mt-1">•</span>
-                              <span>Personalisation and impact</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      {/* Primary profiles - White Box with Border */}
-                      <Image
-                        src="/images/Tulip/pprofiles.svg"
-                        alt="T-Test profile"
-                        width={300}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
-                    </div>
+                {/* Slide 5 */}
+                <div className="w-full flex-shrink-0">
+                  <div className="bg-white rounded p-4 md:p-8 border border-gray-300">
+                    <Image
+                      src="/images/Tulip/spear-slide5.svg"
+                      alt="SPEAR Framework - Report"
+                      width={1200}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
                 </div>
               </div>
-
-              {/* Carousel Dots */}
-              <div className="flex items-center justify-center gap-2 mt-8">
-                {[0, 1, 2, 3, 4].map((index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSpearSlide(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      currentSpearSlide === index
-                        ? "bg-gray-900"
-                        : "bg-gray-300"
-                    }`}
-                  />
-                ))}
-              </div>
-
-              {/* Navigation Arrows */}
-              <button
-                onClick={() =>
-                  setCurrentSpearSlide(Math.max(0, currentSpearSlide - 1))
-                }
-                disabled={currentSpearSlide === 0}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
-              >
-                <svg
-                  className="w-6 h-6 text-gray-900"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
-
-              <button
-                onClick={() =>
-                  setCurrentSpearSlide(Math.min(4, currentSpearSlide + 1))
-                }
-                disabled={currentSpearSlide === 4}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
-              >
-                <svg
-                  className="w-6 h-6 text-gray-900"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
             </div>
+
+            {/* Carousel Dots */}
+            <div className="flex items-center justify-center gap-2 mt-8">
+              {[0, 1, 2, 3, 4].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSpearSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    currentSpearSlide === index ? "bg-gray-900" : "bg-gray-300"
+                  }`}
+                />
+              ))}
             </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={() =>
+                setCurrentSpearSlide(Math.max(0, currentSpearSlide - 1))
+              }
+              disabled={currentSpearSlide === 0}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
+            >
+              <svg
+                className="w-6 h-6 text-gray-900"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              onClick={() =>
+                setCurrentSpearSlide(Math.min(4, currentSpearSlide + 1))
+              }
+              disabled={currentSpearSlide === 4}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
+            >
+              <svg
+                className="w-6 h-6 text-gray-900"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       {/* What These Insights Triggered Internally Section */}
@@ -1463,7 +1062,7 @@ export default function TulipCaseStudy() {
 
             {/* Carousel Navigation */}
             <div className="flex items-center justify-center gap-2 mt-8">
-              {[0, 1, 2].map((index) => (
+              {[0, 1].map((index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentQASSlide(index)}
@@ -1499,9 +1098,9 @@ export default function TulipCaseStudy() {
 
             <button
               onClick={() =>
-                setCurrentQASSlide(Math.min(2, currentQASSlide + 1))
+                setCurrentQASSlide(Math.min(1, currentQASSlide + 1))
               }
-              disabled={currentQASSlide === 2}
+              disabled={currentQASSlide === 1}
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all z-10"
             >
               <svg
@@ -1679,8 +1278,8 @@ export default function TulipCaseStudy() {
                 </div>
 
                 <p className="text-white text-lg leading-relaxed mb-auto max-w-[400px]">
-                  Reduced customer onboarding time to just 10.2 days (earlier 180
-                  days) without increasing CAC.
+                  Reduced customer onboarding time to just 10.2 days (earlier
+                  180 days) without increasing CAC.
                 </p>
 
                 <div className="flex items-center justify-end mt-6">
@@ -1711,8 +1310,8 @@ export default function TulipCaseStudy() {
                   Want to discuss this case study?
                 </h2>
                 <p className="text-lg mb-6 md:mb-8 text-white/90">
-                  Let's talk about how strategic design can transform your business
-                  metrics.
+                  Let's talk about how strategic design can transform your
+                  business metrics.
                 </p>
                 <div>
                   <Link
