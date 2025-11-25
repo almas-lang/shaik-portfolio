@@ -42,6 +42,7 @@ export default function ClientsSection() {
                     alt={`${client.name} logo`}
                     width={80}
                     height={80}
+                    loading="lazy"
                     className="w-full h-full object-contain"
                   />
                 </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Figtree } from "next/font/google";
+import { Plus_Jakarta_Sans, Figtree, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
@@ -13,6 +13,13 @@ const figtree = Figtree({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-body",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+  weight: ["700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -57,18 +64,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Google Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap"
-          rel="stylesheet"
-        />
-
-        {/* Google Analytics */}
+        {/* Google Analytics - Lazy loaded for better performance */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -77,8 +78,8 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Microsoft Clarity */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        {/* Microsoft Clarity - Lazy loaded for better performance */}
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -88,7 +89,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${plusJakartaSans.variable} ${figtree.variable} font-body antialiased`}>
+      <body className={`${plusJakartaSans.variable} ${figtree.variable} ${playfairDisplay.variable} font-body antialiased`}>
         {children}
       </body>
     </html>

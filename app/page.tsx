@@ -1,14 +1,17 @@
+import dynamic from 'next/dynamic';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import EnablingBusinesses from './components/EnablingBusinesses';
 import Experience from './components/Experience';
-import BooksFrameworks from './components/BooksFrameworks';
-import Accolades from './components/Accolades';
-import Testimonials from './components/Testimonials';
-import AboutSection from './components/AboutSection';
-import ClientsSection from './components/ClientsSection';
-import FeaturedReads from './components/FeaturedReads';
-import ContactFooter from './components/ContactFooter';
+
+// Lazy load below-the-fold components for better performance
+const BooksFrameworks = dynamic(() => import('./components/BooksFrameworks'), { ssr: true });
+const Accolades = dynamic(() => import('./components/Accolades'), { ssr: true });
+const Testimonials = dynamic(() => import('./components/Testimonials'), { ssr: true });
+const AboutSection = dynamic(() => import('./components/AboutSection'), { ssr: true });
+const ClientsSection = dynamic(() => import('./components/ClientsSection'), { ssr: true });
+const FeaturedReads = dynamic(() => import('./components/FeaturedReads'), { ssr: true });
+const ContactFooter = dynamic(() => import('./components/ContactFooter'), { ssr: true });
 
 export default function Home() {
   return (

@@ -53,26 +53,12 @@ export default function RevaCaseStudy() {
         </div>
       </section>
 
-      {/* Video/Image Placeholder */}
+      {/* Video/Image Placeholder - Temporarily Hidden */}
+      {/* TODO: Add video here tomorrow */}
+
+      {/* One-pager Section */}
       <section className="py-12 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5] relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/section2-bg.svg')" }}>
-        <div className="container mx-auto max-w-7xl pb-12">
-          <div className="aspect-video bg-black rounded-md flex items-center justify-center">
-            <div className="w-20 h-20 rounded-full bg-[#E63A46] flex items-center justify-center">
-              <svg
-                className="w-10 h-10 text-white ml-2"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        {/* </section> */}
-
-        {/* One-pager Section */}
-        {/* <section className="py-16 px-4 md:px-6 bg-gradient-to-b from-[#e8e4f3] to-[#f5f5f5]"> */}
         <div className="container mx-auto max-w-7xl">
           {/* White container that looks like a page */}
           <div className="bg-white rounded-md shadow-xl p-8 md:p-12 lg:p-16">

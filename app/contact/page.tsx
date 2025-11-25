@@ -32,11 +32,19 @@ export default function ContactPage() {
             </Link>
             <div className="flex items-center gap-8">
               <Link
-                href="/#work"
+                href="/"
                 className="text-gray-800 hover:text-[#5b3a8f] transition-colors font-medium"
               >
                 My work
               </Link>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 hover:text-[#5b3a8f] transition-colors font-medium"
+              >
+                Resume
+              </a>
               <span className="text-[#5b3a8f] font-semibold">Contact me</span>
             </div>
           </div>

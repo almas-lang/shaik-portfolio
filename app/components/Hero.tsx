@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section
       className="w-full bg-[#f5f5f5] pb-12 md:pb-16 relative bg-cover bg-center bg-no-repeat"
@@ -72,15 +81,14 @@ export default function Hero() {
           >
             <div className="mb-4 md:mb-8 lg:mb-12">
               <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-                {/* <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full bg-white flex items-center justify-center p-2 md:p-3"> */}
-                  <Image
-                    src="/images/Tulip/tulip-logo2.svg"
-                    alt="Tulip Logo"
-                    width={120}
-                    height={120}
-                    className="w-20 h-20 md:w-16 md:h-16 object-contain"
-                  />
-                {/* </div> */}
+                <Image
+                  src="/images/Tulip/tulip-logo2.svg"
+                  alt="Tulip Logo"
+                  width={120}
+                  height={120}
+                  priority
+                  className="w-20 h-20 md:w-16 md:h-16 object-contain"
+                />
                 <h2 className="text-[28px] sm:text-[36px] md:text-[42px] font-bold leading-none font-heading">
                   Tulip
                 </h2>
@@ -119,10 +127,31 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* See more similar work button */}
-        <div className="mt-4 md:mt-0">
+        {/* See more similar work button and Scroll Indicator */}
+        <div className="mt-4 md:mt-0 flex items-center justify-between">
           <button className="bg-[#E63A46] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors">
             See more similar work
+          </button>
+
+          {/* Scroll Down Indicator */}
+          <button
+            onClick={handleScrollDown}
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#E63A46] flex items-center justify-center hover:bg-[#d12835] transition-all hover:scale-110 shadow-lg flex-shrink-0"
+            aria-label="Scroll down"
+          >
+            <svg
+              className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
           </button>
         </div>
       </div>

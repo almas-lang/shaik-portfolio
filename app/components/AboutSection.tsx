@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function AboutSection() {
@@ -13,6 +12,7 @@ export default function AboutSection() {
                 src="/images/profile1.svg"
                 alt="Shaik Murad"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                 className="object-cover"
               />
             </div>
@@ -54,12 +54,14 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <Link
-              href="#"
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#E63A46] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-[#d12835] transition-colors"
             >
               See my resume
-            </Link>
+            </a>
           </div>
         </div>
       </div>

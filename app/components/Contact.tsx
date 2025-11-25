@@ -19,13 +19,23 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
+      // Prepare data for API (combining firstName and lastName)
+      const submitData = {
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        email: formData.email,
+        subject: formData.reason || 'No subject',
+        message: formData.message + (formData.phone ? `\n\nPhone: ${formData.phone}` : ''),
+      };
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submitData),
       });
+
+      const data = await response.json();
 
       if (response.ok) {
         setSubmitStatus('success');
@@ -41,6 +51,7 @@ export default function Contact() {
           setSubmitStatus('idle');
         }, 5000);
       } else {
+        console.error('Submission error:', data);
         setSubmitStatus('error');
       }
     } catch (error) {

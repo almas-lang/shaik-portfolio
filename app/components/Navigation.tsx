@@ -23,11 +23,19 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-end items-center gap-8">
           <Link
-            href="/#work"
+            href="/"
             className="text-gray-800 hover:text-[#5b3a8f] transition-colors font-medium"
           >
             My work
           </Link>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 hover:text-[#5b3a8f] transition-colors font-medium"
+          >
+            Resume
+          </a>
           <Link
             href="/contact"
             className="text-gray-800 hover:text-[#5b3a8f] transition-colors font-medium"
