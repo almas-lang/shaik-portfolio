@@ -1,56 +1,104 @@
+'use client';
+
+import { useRef } from 'react';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 
 export default function ClientsSection() {
-  const clients = [
-    { name: 'Yokogawa', description: 'Industrial Automation', logo: '/images/Logos/yokogawa.jpeg' },
-    { name: 'Lighthouse Canton', description: 'Wealth Management', logo: '/images/Logos/LC.png' },
-    { name: 'GetCopayHelp', description: 'Patient Financial Assistance', logo: '/images/Logos/Getcopay.jpeg' },
-    { name: 'To the New', description: 'Servicing Banking, Travel', logo: '/images/Logos/tothenew.jpeg' },
-    { name: 'Credit Saison', description: 'NBFC, Loan & Credit Line', logo: '/images/Logos/creditsaison.png' },
-    { name: 'Tata Sky', description: 'Entertainment', logo: '/images/Logos/Tata_Sky.webp' },
-    { name: 'Milaap', description: 'Social Crowdfunding', logo: '/images/Logos/milaap.jpeg' },
-    { name: 'Xperience Wave', description: 'Education, Health', logo: '/images/Logos/xw.png' },
-    { name: 'Motus', description: 'Banking, Vehicle reimbursement', logo: '/images/Logos/motus.jpeg' },
-    { name: 'Fortra', description: 'Data Security', logo: '/images/Logos/fortra.png' },
-    { name: 'KredX', description: 'Supply chain finance', logo: '/images/Logos/kredx.jpeg' },
-    { name: 'Westcon-Comstor', description: 'Servicing, IT distributor', logo: '/images/Logos/Westcon-Comstor.jpeg' },
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
+  const clientsRow1 = [
+    { name: 'Yokogawa', logo: '/images/Logos/yokogawa.jpeg' },
+    { name: 'Lighthouse Canton', logo: '/images/Logos/LC.png' },
+    { name: 'GetCopayHelp', logo: '/images/Logos/Getcopay.jpeg' },
+    { name: 'To the New', logo: '/images/Logos/tothenew.jpeg' },
+    { name: 'Credit Saison', logo: '/images/Logos/creditsaison.png' },
+    { name: 'Tata Sky', logo: '/images/Logos/Tata_Sky.webp' },
   ];
 
-  return (
-    <section className="py-12 md:py-16 lg:py-20 bg-[#f5f5f5]">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#5b3a8f] mb-8 md:mb-12 lg:mb-16">
-            Worked with 20+ businesses
-          </h2>
+  const clientsRow2 = [
+    { name: 'Milaap', logo: '/images/Logos/milaap.jpeg' },
+    { name: 'Xperience Wave', logo: '/images/Logos/xw.png' },
+    { name: 'Motus', logo: '/images/Logos/motus.jpeg' },
+    { name: 'Fortra', logo: '/images/Logos/fortra.png' },
+    { name: 'KredX', logo: '/images/Logos/kredx.jpeg' },
+    { name: 'Westcon-Comstor', logo: '/images/Logos/Westcon-Comstor.jpeg' },
+  ];
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="bg-white p-5 md:p-6 rounded-lg border-b-4 border-transparent hover:border-[#5b3a8f] transition-all duration-300 flex items-center justify-between gap-4"
-              >
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
-                    {client.name}
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600">{client.description}</p>
-                </div>
-                <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 md:w-20 md:h-20">
-                  <Image
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    width={80}
-                    height={80}
-                    loading="lazy"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+  const LogoItem = ({ client }: { client: { name: string; logo: string } }) => (
+    <motion.div
+      whileHover={{ scale: 1.1, y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="flex-shrink-0 w-28 h-16 md:w-36 md:h-20 bg-white rounded-xl flex items-center justify-center p-3 mx-2 md:mx-3"
+    >
+      <Image
+        src={client.logo}
+        alt={`${client.name} logo`}
+        width={100}
+        height={60}
+        className="w-full h-full object-contain"
+      />
+    </motion.div>
+  );
+
+  return (
+    <section ref={sectionRef} className="bg-[#0a0a0a] border-t border-gray-800 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-12 md:pt-20 pb-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-2">
+            Trusted by Industry Leaders
+          </h2>
+          <p className="text-gray-500 mb-8">20+ businesses across startups to MNCs</p>
+        </motion.div>
       </div>
+
+      {/* Marquee Container */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="relative py-6"
+      >
+        {/* Gradient Fades */}
+        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+
+        {/* Row 1 - Moving Left */}
+        <div className="flex mb-4 animate-marquee-left">
+          {[...clientsRow1, ...clientsRow1, ...clientsRow1].map((client, index) => (
+            <LogoItem key={`row1-${index}`} client={client} />
+          ))}
+        </div>
+
+        {/* Row 2 - Moving Right */}
+        <div className="flex animate-marquee-right">
+          {[...clientsRow2, ...clientsRow2, ...clientsRow2].map((client, index) => (
+            <LogoItem key={`row2-${index}`} client={client} />
+          ))}
+        </div>
+      </motion.div>
+
+      <style jsx>{`
+        @keyframes marquee-left {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+        @keyframes marquee-right {
+          0% { transform: translateX(-33.33%); }
+          100% { transform: translateX(0); }
+        }
+        .animate-marquee-left {
+          animation: marquee-left 25s linear infinite;
+        }
+        .animate-marquee-right {
+          animation: marquee-right 25s linear infinite;
+        }
+      `}</style>
     </section>
   );
 }
