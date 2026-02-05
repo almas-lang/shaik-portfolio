@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
 
     // Prepare data for Google Sheets
     const timestamp = new Date().toLocaleString('en-US', {
-      timeZone: 'America/New_York',
+      timeZone: 'Asia/Kolkata',
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
